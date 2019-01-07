@@ -48,7 +48,7 @@ But with curl:
 ![Screenshot](images/9.png)
 
 
-There is a vulnerability relate to pchart:
+There is a vulnerability related to pchart:
 
 ![Screenshot](images/10.png)
 
