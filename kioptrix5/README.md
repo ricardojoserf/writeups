@@ -1,170 +1,127 @@
-# Title
+# Kioptrix 5
 Description
-#### Subtitle
+#### Information gatering
 
-Text
+Nmap scan:
 
 ![Screenshot](images/1.png)
 
-#### Subtitle
-
-Text
+Nikto scan shows mod_ssl vulnerability:
 
 ![Screenshot](images/2.png)
 
-#### Subtitle
+#### Locate vulnerability
 
-Text
+Use searchsploit to locate the vulnerability:
 
 ![Screenshot](images/3.png)
 
-#### Subtitle
+#### Compilation
 
-Text
+Compile the OpenFuck exploit:
 
 ![Screenshot](images/4.png)
 
-#### Subtitle
 
-Text
-
-![Screenshot](images/5.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/6.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/7.png)
-
-#### Subtitle
-
-Text
+It seems unsuccessful:
 
 ![Screenshot](images/8.png)
 
-#### Subtitle
 
-Text
+
+#### Website in port 8080
+
+It is not accesible:
+
+![Screenshot](images/6.png)
+
+
+#### Website in port 80
+
+It is a default page:
+
+![Screenshot](images/5.png)
+
+
+But with curl:
 
 ![Screenshot](images/9.png)
 
-#### Subtitle
 
-Text
+There is a vulnerability relate to pchart:
 
 ![Screenshot](images/10.png)
 
-#### Subtitle
 
-Text
+#### Directory traversal - Recon phase
 
-![Screenshot](images/11.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/12.png)
-
-#### Subtitle
-
-Text
 
 ![Screenshot](images/13.png)
 
-#### Subtitle
-
-Text
 
 ![Screenshot](images/14.png)
 
-#### Subtitle
-
-Text
 
 ![Screenshot](images/15.png)
 
-#### Subtitle
-
-Text
 
 ![Screenshot](images/16.png)
 
-#### Subtitle
-
-Text
 
 ![Screenshot](images/17.png)
 
-#### Subtitle
 
-Text
+#### Locate the correct User Agent
+
+Read http.conf:
 
 ![Screenshot](images/18.png)
 
-#### Subtitle
-
-Text
+Access using curl again:
 
 ![Screenshot](images/19.png)
 
-#### Subtitle
 
-Text
+#### Locate a second phptax exploit:
+
+This allows remote code execution:
 
 ![Screenshot](images/20.png)
 
-#### Subtitle
-
-Text
+Read the exploit:
 
 ![Screenshot](images/21.png)
 
-#### Subtitle
-
-Text
+There is also a Metasploit module:
 
 ![Screenshot](images/22.png)
 
-#### Subtitle
+#### Metasploit module
 
-Text
+Set the parameters and run it:
 
 ![Screenshot](images/23.png)
 
-#### Subtitle
-
-Text
+#### Locate if there is a Kernel or OS exploit
 
 ![Screenshot](images/24.png)
 
-#### Subtitle
+#### Upload and compile the exploit
 
-Text
 
 ![Screenshot](images/25.png)
 
-#### Subtitle
 
-Text
+Check it is downloaded from our host:
 
 ![Screenshot](images/26.png)
 
-#### Subtitle
+#### Get root!
 
-Text
 
 ![Screenshot](images/27.png)
 
-#### Subtitle
-
-Text
+There are more possibilities:
 
 ![Screenshot](images/28.png)
 
