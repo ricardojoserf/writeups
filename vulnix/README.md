@@ -1,218 +1,95 @@
-# Title
-Description
-#### Subtitle
+# HackLAB: Vulnix
+Vulnhub: https://www.vulnhub.com/entry/hacklab-vulnix,48/
+#### Information gathering
 
-Text
+Nmap scan. OS detection:
 
 ![Screenshot](images/1.png)
 
-#### Subtitle
-
-Text
+Using the NSE scripts:
 
 ![Screenshot](images/2.png)
 
-#### Subtitle
-
-Text
+Enumerating SMTP users:
 
 ![Screenshot](images/3.png)
 
-#### Subtitle
-
-Text
-
 ![Screenshot](images/4.png)
 
-#### Subtitle
-
-Text
+Checking some SMTP users (ricardo does not exist, lp exists):
 
 ![Screenshot](images/5.png)
 
-#### Subtitle
+#### NTFS share 
 
-Text
+Detect it:
 
 ![Screenshot](images/6.png)
 
-#### Subtitle
-
-Text
+Check permissions (why can not i access!!!):
 
 ![Screenshot](images/7.png)
 
-#### Subtitle
-
-Text
+A futile, futile test:
 
 ![Screenshot](images/8.png)
 
-#### Subtitle
-
-Text
+A second futile, futile test:
 
 ![Screenshot](images/9.png)
 
-#### Subtitle
-
-Text
-
-![Screenshot](images/10.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/11.png)
-
-#### Subtitle
-
-Text
+Nope, not working... This is not the way, indeed!
 
 ![Screenshot](images/12.png)
 
-#### Subtitle
-
-Text
-
 ![Screenshot](images/13.png)
 
-#### Subtitle
+#### NFSpy
 
-Text
+Test if it can be mounted using NFSpy:
 
 ![Screenshot](images/14.png)
 
-#### Subtitle
-
-Text
-
-![Screenshot](images/15.png)
-
-#### Subtitle
-
-Text
+Now, do it without using the "ro" (read-only) option... xD
 
 ![Screenshot](images/16.png)
 
-#### Subtitle
-
-Text
+Create a .ssh folder and add your SSH key:
 
 ![Screenshot](images/17.png)
 
-#### Subtitle
+#### SSH connection
 
-Text
+Now you can connect the system using your SSH key:
 
 ![Screenshot](images/18.png)
 
-#### Subtitle
 
-Text
-
-![Screenshot](images/19.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/20.png)
-
-#### Subtitle
-
-Text
+Check what you can execute as superuser:
 
 ![Screenshot](images/21.png)
 
-#### Subtitle
-
-Text
-
-![Screenshot](images/22.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/23.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/24.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/25.png)
-
-#### Subtitle
-
-Text
+Execute it! Change the "root_squash" to "no_root_squash"
 
 ![Screenshot](images/26.png)
 
-#### Subtitle
-
-Text
-
 ![Screenshot](images/27.png)
 
-#### Subtitle
+#### Privilege escalation
 
-Text
-
-![Screenshot](images/28.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/29.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/30.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/31.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/32.png)
-
-#### Subtitle
-
-Text
+With "no_root_squash" we can mount the share and change permissions as the root user. Let us create a "bash" binary with the UID flag! But first let us test it with a file named "a":
 
 ![Screenshot](images/33.png)
 
-#### Subtitle
-
-Text
-
-![Screenshot](images/34.png)
-
-#### Subtitle
-
-Text
+In the server it seems to be owned by root. Let us try to the same with bash now. Copy the binary:
 
 ![Screenshot](images/35.png)
 
-#### Subtitle
+Change owner and permissions:
 
-Text
+![Screenshot](images/36.png)
+
+### Get root
 
 ![Screenshot](images/36.png)
 
