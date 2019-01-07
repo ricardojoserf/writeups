@@ -1,122 +1,86 @@
-# Title
-Description
-#### Subtitle
+# Kioptrix: Level 1.3 (#4)
+Vulnhub page: https://www.vulnhub.com/entry/kioptrix-level-13-4,25/
+#### Information gathering
 
-Text
+Nmap scan:
 
 ![Screenshot](images/1.png)
 
-#### Subtitle
-
-Text
+Enum4linux scan:
 
 ![Screenshot](images/2.png)
 
-#### Subtitle
-
-Text
-
 ![Screenshot](images/3.png)
-
-#### Subtitle
-
-Text
 
 ![Screenshot](images/4.png)
 
-#### Subtitle
-
-Text
-
-![Screenshot](images/5.png)
-
-#### Subtitle
-
-Text
+Nikto scan:
 
 ![Screenshot](images/6.png)
 
-#### Subtitle
-
-Text
-
 ![Screenshot](images/7.png)
 
-#### Subtitle
 
-Text
+Directory listing (using dirsearch. Gobuster is cool too)
 
-![Screenshot](images/8.png)
+![Screenshot](images/5.png)
 
-#### Subtitle
 
-Text
+#### Website recon
+
+Access the /member route. Test the different users found using Enum4linux:
 
 ![Screenshot](images/9.png)
 
-#### Subtitle
-
-Text
-
 ![Screenshot](images/10.png)
 
-#### Subtitle
-
-Text
+Check there is a XSS vulnerability too:
 
 ![Screenshot](images/11.png)
 
-#### Subtitle
+#### SSH connection
 
-Text
+The shell is weird! It closes the connection after 2 commands...
 
 ![Screenshot](images/12.png)
 
-#### Subtitle
-
-Text
+Well but it seems that it is possible to enumerate directories and files! At least the first one hehe...
 
 ![Screenshot](images/13.png)
 
-#### Subtitle
-
-Text
+Let us keep trying...
 
 ![Screenshot](images/14.png)
 
-#### Subtitle
-
-Text
+The "forbidden path" is suspicious... Google says it could be lshell. Let us check!
 
 ![Screenshot](images/15.png)
 
-#### Subtitle
+The .conf file exists... let us say it is proven that they are using it
 
-Text
+#### Lshell exploit
+
+We get a reverse shell:
 
 ![Screenshot](images/16.png)
 
-#### Subtitle
+### Escaping lshell
 
-Text
-
-![Screenshot](images/17.png)
-
-#### Subtitle
-
-Text
+Explanation from Stackoverflow:
 
 ![Screenshot](images/18.png)
 
-#### Subtitle
+Escape:
 
-Text
+![Screenshot](images/17.png)
+
+Get Mysql credentials:
 
 ![Screenshot](images/19.png)
 
-#### Subtitle
+#### Mysql Exploit. RoOt!
 
-Text
+Add the UID flag in bash binary as root user (from MySQL) and run it as John. You are root: 
 
 ![Screenshot](images/20.png)
 
