@@ -1,138 +1,83 @@
-# Title
-Description
-#### Subtitle
+# Kioptrix: Level 1.2 (#3)
+Vulnhub page: https://www.vulnhub.com/entry/kioptrix-level-12-3,24/
+#### Information gathering
 
-Text
+Nmap scan:
 
 ![Screenshot](images/1.png)
 
-#### Subtitle
-
-Text
+Nikto scan:
 
 ![Screenshot](images/2.png)
 
-#### Subtitle
-
-Text
+Directory scan (through dirsearch):
 
 ![Screenshot](images/3.png)
 
-#### Subtitle
+#### Information gathering in the Website
 
-Text
+List directories in /modules:
 
 ![Screenshot](images/4.png)
 
-#### Subtitle
-
-Text
+Check PHPAdmin page:
 
 ![Screenshot](images/5.png)
 
-#### Subtitle
+#### Lotus exploit
 
-Text
+Locate it:
 
 ![Screenshot](images/6.png)
 
-#### Subtitle
-
-Text
+Run it:
 
 ![Screenshot](images/7.png)
 
-#### Subtitle
-
-Text
+The reverse shell is correctly created:
 
 ![Screenshot](images/8.png)
 
-#### Subtitle
+#### Recon phase
 
-Text
+Find Kernel version:
 
 ![Screenshot](images/9.png)
 
-#### Subtitle
-
-Text
+Locate and read interesting files as admin.dat or salt.dat:
 
 ![Screenshot](images/10.png)
 
-#### Subtitle
-
-Text
-
-![Screenshot](images/11.png)
-
-#### Subtitle
-
-Text
 
 ![Screenshot](images/12.png)
 
-#### Subtitle
+I tried a lot of stuff in here, trying to deofuscate code and such, but no results. As always, it was far easier xDD
 
-Text
+#### Locate credentials 
 
-![Screenshot](images/13.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/14.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/15.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/16.png)
-
-#### Subtitle
-
-Text
-
-![Screenshot](images/17.png)
-
-#### Subtitle
-
-Text
+PHPadmin credentials are stored in clear text! In general if there is a database and you have low-privileged access, look for them! Usually they are stored in files with "config" in them. In this case:
 
 ![Screenshot](images/18.png)
 
-#### Subtitle
+#### PHPAdmin recon
 
-Text
+Access using the website
 
 ![Screenshot](images/19.png)
 
-#### Subtitle
-
-Text
+Find the developers accounts table:
 
 ![Screenshot](images/20.png)
 
-#### Subtitle
-
-Text
+Read the values:
 
 ![Screenshot](images/21.png)
 
-#### Subtitle
-
-Text
+Crack them:
 
 ![Screenshot](images/22.png)
 
-#### Subtitle
+#### SSH access
 
 Text
 
@@ -140,13 +85,10 @@ Text
 
 #### Subtitle
 
-Text
+Check what can each user do with "sudo -l". Loneferret can do anything! Maybe "sudo su" would be a faster way, but let us try to do it with... awk, for example xD:
 
 ![Screenshot](images/24.png)
 
-#### Subtitle
-
-Text
 
 ![Screenshot](images/25.png)
 
