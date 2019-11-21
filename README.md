@@ -1,4 +1,4 @@
-# walkthroughs
+# write-ups
 
 HTB VMs:
 
