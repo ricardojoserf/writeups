@@ -1,6 +1,10 @@
 # walkthroughs
 
-Vulnhub virtual machines:
+HTB VMs:
+
+- Networked
+
+Vulnhub VMs:
 
 - Kioptrix 1 (#1) - https://www.vulnhub.com/entry/kioptrix-level-1-1,22/
 
