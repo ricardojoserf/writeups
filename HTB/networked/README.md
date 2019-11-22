@@ -1,46 +1,50 @@
-# Title
-Description
+# HTB - Networked
 
-Text
+
+Fist, locate the Kali PHP shell and copy it to a file with extension ".php.gif":
 
 ![Screenshot](images/Screenshot_1.png)
 
-Text
+Add the GIF header (GIF89):
 
 ![Screenshot](images/Screenshot_2.png)
 
-Text
+Upload it and find its path: 
 
 ![Screenshot](images/Screenshot_3.png)
 
-Text
+When the path is visited, the reverse shell opens:
 
 ![Screenshot](images/Screenshot_4.png)
 
-Text
+In gully's home folder we can see a crontab file:
 
 ![Screenshot](images/Screenshot_5.png)
 
-Text
+The crontab file seems to remove the folders in /var/www/html/uploads:
 
 ![Screenshot](images/Screenshot_6.png)
 
-Text
+It is possible to create a folder whose name allows to inject in the crontab execution:
 
 ![Screenshot](images/Screenshot_7.png)
 
-Text
+This is the crontab vulnerable file:
 
 ![Screenshot](images/Screenshot_8.png)
 
-Text
+The shell opens as user *gully*:
 
 ![Screenshot](images/Screenshot_9.png)
 
-Text
+We spawn an interactive shell and check one command can be executed as sudo without password:
 
 ![Screenshot](images/Screenshot_10.png)
 
-Text
+This is the code of the bash file:
 
 ![Screenshot](images/Screenshot_11.png)
+
+It is possible to inject code and open a shell as the user *root*:
+
+![Screenshot](images/Screenshot_12.png)
