@@ -2,6 +2,8 @@
 
 HTB VMs:
 
+- Heist
+
 - Networked
 
 Vulnhub VMs:
