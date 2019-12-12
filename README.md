@@ -6,6 +6,8 @@ HTB VMs:
 
 - Networked
 
+- Wall
+
 Vulnhub VMs:
 
 - Kioptrix 1 (#1) - https://www.vulnhub.com/entry/kioptrix-level-1-1,22/

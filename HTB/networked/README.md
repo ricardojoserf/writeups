@@ -48,3 +48,4 @@ This is the code of the bash file:
 It is possible to inject code and open a shell as the user *root*:
 
 ![Screenshot](images/Screenshot_12.png)
+
