@@ -1,111 +1,84 @@
 # Title
 
-Text
+After checking the nmap scan did not show any specially interesting port open, the website was fuzzed:
+
+![Screenshot](images/Screenshot_5.jpg)
+
+After the directory scan using ffuf, the only interesting path was "/monitoring". The request must be intercepted using a proxy such as Burp:
 
 ![Screenshot](images/Screenshot_1.jpg)
 
 
-Text
+Changing the HTTP method from GET to POST, the website redirects to "/centreon":
 
 ![Screenshot](images/Screenshot_2.jpg)
 
 
-Text
-
-![Screenshot](images/Screenshot_3.jpg)
-
-
-Text
+First the default credentials were found:
 
 ![Screenshot](images/Screenshot_4.jpg)
 
 
-Text
+Then these were tested, but unsuccessfully:
 
-![Screenshot](images/Screenshot_5.jpg)
+![Screenshot](images/Screenshot_4.jpg)
 
 
-Text
+Checking Github, I found a tool by @ankitsaini2609 to bruteforce the credentials:
 
 ![Screenshot](images/Screenshot_6.jpg)
 
 
-Text
+I tested the Rockyou.txt dictionary...
 
 ![Screenshot](images/Screenshot_7.jpg)
 
 
-Text
+... and found the pass word was "pasword1" (easy password):
 
 ![Screenshot](images/Screenshot_8.jpg)
 
 
-Text
+This allowed to access the Centreon website and it was tested to exploit the [CVE-2019-13024 vulnerability](https://shells.systems/centreon-v19-04-remote-code-execution-cve-2019-13024/):
 
 ![Screenshot](images/Screenshot_9.jpg)
 
 
-Text
-
-![Screenshot](images/Screenshot_10.jpg)
-
-
-Text
-
-![Screenshot](images/Screenshot_11.jpg)
-
-
-Text
-
-![Screenshot](images/Screenshot_12.jpg)
-
-
-Text
+After some tests, it seemed possible to execute code:
 
 ![Screenshot](images/Screenshot_13.jpg)
 
 
-Text
-
-![Screenshot](images/Screenshot_14.jpg)
-
-
-Text
-
-![Screenshot](images/Screenshot_15.jpg)
-
-
-Text
-
-![Screenshot](images/Screenshot_16.jpg)
-
-
-Text
-
 ![Screenshot](images/Screenshot_19.jpg)
-
-
-Text
 
 ![Screenshot](images/Screenshot_20.jpg)
 
 
-Text
+And it was even possible to download files:
 
-![Screenshot](images/Screenshot_21.jpg)
-
-
-Text
-
-![Screenshot](images/Screenshot_22.jpg)
+![Screenshot](images/Screenshot_14.jpg)
 
 
-Text
+Finally, the payload was this one:
+
+![Screenshot](images/Screenshot_15.jpg)
+
+
+The elf file is created with Msfvenom...
 
 ![Screenshot](images/Screenshot_23.jpg)
 
 
-Text
+.. and opens a Meterpreter session as "www-data" user:
 
-![Screenshot](images/Screenshot_24.jpg)
+![Screenshot](images/Screenshot_16.jpg)
+
+
+The privilege escalation is related to Screen being run as "root" user:
+
+https://www.exploit-db.com/exploits/41154
+
+In this case, instead of compiling and running the exploit, I minimized the terminal screen as much as possible, and then it was possible to write and execute "#!/bin/bash" (or similar), getting a session as root user directly:
+
+![Screenshot](images/Screenshot_22.jpg)
 
