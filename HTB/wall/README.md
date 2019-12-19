@@ -1,4 +1,11 @@
-# Title
+# HTB - Wall
+
+Vulnerabilities:
+
+- Centreon v19.04 Remote Code Execution (CVE-2019-13024) - https://shells.systems/centreon-v19-04-remote-code-execution-cve-2019-13024/
+
+- GNU Screen 4.5.0 - Local Privilege Escalation - https://www.exploit-db.com/exploits/41154
+
 
 After checking the nmap scan did not show any specially interesting port open, the website was fuzzed:
 
@@ -19,12 +26,7 @@ First the default credentials were found:
 ![Screenshot](images/Screenshot_4.jpg)
 
 
-Then these were tested, but unsuccessfully:
-
-![Screenshot](images/Screenshot_4.jpg)
-
-
-Checking Github, I found a tool by @ankitsaini2609 to bruteforce the credentials:
+These were tested, but unsuccessfully. Checking Github, I found a tool by @ankitsaini2609 to bruteforce the credentials:
 
 ![Screenshot](images/Screenshot_6.jpg)
 
