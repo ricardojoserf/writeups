@@ -64,3 +64,4 @@ As there is a Metasploit module, it was easy to become root:
 ![Screenshot](images/Screenshot_17.png)
 
 
+

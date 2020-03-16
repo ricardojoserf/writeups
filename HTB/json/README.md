@@ -118,4 +118,4 @@ Nice! We escalated
 
 ![Screenshot](images/Screenshot_30.jpg)
 
-[potato root dance](https://media.giphy.com/media/bPShx901m0HHG/giphy.gif)
+![potato root dance](https://media.giphy.com/media/bPShx901m0HHG/giphy.gif)
