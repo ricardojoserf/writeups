@@ -2,9 +2,17 @@
 
 HTB VMs:
 
+- Bitlab
+
+- Craft
+
 - Heist
 
+- Json
+
 - Networked
+
+- Postman
 
 - Wall
 
