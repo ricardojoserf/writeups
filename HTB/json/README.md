@@ -30,24 +30,27 @@ It seems the password field contains the password hashed with MD5:
 ![Screenshot](images/Screenshot_6.jpg)
 
 
-Let us try to change the value of the parameter *Name*, which is reflected in the website:
+Let us try to change the value of the parameter *Name*, which is reflected in the website...
 
 ![Screenshot](images/Screenshot_7.jpg)
 
-
-Nice! We could have... an XSS? Meh, not good enough.
+... and send it:
 
 ![Screenshot](images/Screenshot_8.jpg)
 
-
-Let us keep trying... Some errors mean a lot:
+Nice! We could have... an XSS? Meh, not good enough.
 
 ![Screenshot](images/Screenshot_9.jpg)
 
 
-That is a possible formatter in [Ysoserial](https://github.com/frohoff/ysoserial):
+Let us keep trying... Some errors mean a lot:
 
 ![Screenshot](images/Screenshot_10.jpg)
+
+
+That is a possible formatter in [Ysoserial](https://github.com/frohoff/ysoserial):
+
+![Screenshot](images/Screenshot_11.jpg)
 
 So let us create a payload with it. The command will ping (send ICMP packets) to our IP address: 
 
