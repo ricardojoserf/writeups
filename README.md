@@ -6,6 +6,8 @@ HTB VMs:
 
 - Craft
 
+- Forest
+
 - Heist
 
 - Json
