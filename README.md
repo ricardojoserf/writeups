@@ -16,6 +16,10 @@ HTB VMs:
 
 - Postman
 
+- Registry
+
+- Sniper
+
 - Wall
 
 
