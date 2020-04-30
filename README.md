@@ -4,6 +4,8 @@ HTB VMs:
 
 - Bitlab
 
+- Control
+
 - Craft
 
 - Forest
@@ -19,6 +21,8 @@ HTB VMs:
 - Registry
 
 - Sniper
+
+- Traverxec
 
 - Wall
 
