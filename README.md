@@ -1,4 +1,4 @@
-# write-ups
+# Writeups
 
 HTB VMs:
 
