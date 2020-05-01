@@ -123,8 +123,6 @@ Now we can access as Hector and grab the user.txt flag:
 ![Screenshot](images/Screenshot_24.png)
 
 
-![Screenshot](images/Screenshot_25.png)
-
 
 And regarding the root flag... To be honest, I found it in a leak in pastebin D:
 
