@@ -19,8 +19,6 @@ HTB VMs:
 
 - Monteverde
 
-- Nest
-
 - Networked
 
 - Obscurity

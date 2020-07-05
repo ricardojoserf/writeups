@@ -38,10 +38,14 @@ And using the Evil-winrm tool it is possible to access with *mhope*:
 ruby evil-winrm/evil-winrm.rb -i 10.10.10.172 -u mhope -p "4n0therD4y@n0th3r$"
 ```
 
-![Screenshot](images/Screenshot_8.jpg)
+![Screenshot](images/Screenshot_9.jpg)
 
 Following [this Adam Chester's blog](https://blog.xpnsec.com/azuread-connect-for-redteam/), we can decrypt the Administrator's password:
 
+![Screenshot](images/Screenshot_10.jpg)
+
 And using again Evil-winrm we can get the root.txt flag!
 
-![Screenshot](images/Screenshot_9.jpg)
+![Screenshot](images/Screenshot_11.jpg)
+
+
