@@ -1,5 +1,6 @@
 # Writeups
 
+
 HTB VMs:
 
 - Bitlab
@@ -10,15 +11,27 @@ HTB VMs:
 
 - Forest
 
+- Forwardslash
+
 - Heist
 
 - Json
 
+- Monteverde
+
+- Nest
+
 - Networked
+
+- Obscurity
 
 - Postman
 
 - Registry
+
+- Resolute
+
+- Servmon
 
 - Sniper
 
