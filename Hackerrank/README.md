@@ -72,5 +72,38 @@ Sample Output 0
 Berry
 Harry
 
+```
+if __name__ == '__main__':
+    aux_list = []
+    aux_scores = []
+    for _ in range(int(raw_input())):
+        name = raw_input()
+        score = float(raw_input())
+        aux_list.append([name, score])
+        aux_scores.append(score)
+    #print(aux_list)
+    
+    min_number = 100
+    for i in range(0,len(aux_scores)):
+        #print(i)
+        if aux_scores[i] < min_number:
+            min_number = aux_scores[i]
+    #print(min_number)
+    
+    secondlowest = 100
+    for i in range(0,len(aux_scores)):
+        if aux_scores[i] < secondlowest and aux_scores[i] != min_number:
+            secondlowest = aux_scores[i]
+    #print (secondlowest)
+    
+    aux_names = []
+    for i in aux_list:
+        if i[1] == secondlowest:
+            aux_names.append(i[0])
+    
+    for i in sorted(aux_names):
+        print(i)
+```
+
 --------------------------------------
 
