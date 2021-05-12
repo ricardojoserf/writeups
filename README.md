@@ -37,6 +37,7 @@ HTB VMs:
 
 - Wall
 
+---------------------------------------
 
 Vulnhub VMs:
 
@@ -56,6 +57,7 @@ Vulnhub VMs:
 
 - HackLAB: Vulnix - https://www.vulnhub.com/entry/hacklab-vulnix,48/
 
+---------------------------------------
 
 Hackerrank:
 
@@ -64,5 +66,3 @@ Hackerrank:
 - Nested Lists
 
 - Finding the percentage
-
-
