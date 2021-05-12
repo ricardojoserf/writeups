@@ -56,3 +56,13 @@ Vulnhub VMs:
 
 - HackLAB: Vulnix - https://www.vulnhub.com/entry/hacklab-vulnix,48/
 
+
+Hackerrank:
+
+- Find the Runner-Up Score!
+
+- Nested Lists
+
+- Finding the percentage
+
+
