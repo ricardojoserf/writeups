@@ -12,8 +12,8 @@ https://portswigger.net/web-security/oauth
 
 ---
 
-![](images/2 - OAuth account hijacking via redirect_uri/1.png)
-![](images/2 - OAuth account hijacking via redirect_uri/2.png)
+![](images/2%20-%20OAuth%20account%20hijacking%20via%20redirect_uri/1.png)
+![](images/2%20-%20OAuth%20account%20hijacking%20via%20redirect_uri/2.png)
 
 https://0a0c001204d355fec1a39983009b007d.web-security-academy.net/
 
