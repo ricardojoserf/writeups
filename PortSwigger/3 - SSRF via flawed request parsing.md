@@ -5,16 +5,17 @@ This lab is vulnerable to routing-based SSRF due to its flawed parsing of the re
 
 To solve the lab, access the internal admin panel located in the 192.168.0.0/24 range, then delete Carlos.
 
-![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/1.png)
-
-Link: https://portswigger.net/web-security/host-header/exploiting#routing-based-ssrf
-
+-------------
 
 ![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/2.png)
 
+![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/1.png)
+
+Reference: https://portswigger.net/web-security/host-header/exploiting#routing-based-ssrf
+
 -------------
 
-https://0a5100f104ffdc65c3832510004000cf.web-security-academy.net/
+Generated link: https://0a5100f104ffdc65c3832510004000cf.web-security-academy.net/
 
 If you supply the domain of your Collaborator server in the Host header, and subsequently receive a DNS lookup from the target server or another in-path system, this indicates that you may be able to route requests to arbitrary domains.
 
