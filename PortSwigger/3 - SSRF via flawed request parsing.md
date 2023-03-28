@@ -7,11 +7,11 @@ To solve the lab, access the internal admin panel located in the 192.168.0.0/24 
 
 -------------
 
-![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/2.png)
-
 ![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/1.png)
 
 Reference: https://portswigger.net/web-security/host-header/exploiting#routing-based-ssrf
+
+![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/2.png)
 
 -------------
 
