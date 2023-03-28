@@ -13,8 +13,6 @@ You can log in with your own social media account using the following credential
 
 ![](images/2%20-%20OAuth%20account%20hijacking%20via%20redirect_uri/1.png)
 
-<br>
-
 Reference: https://portswigger.net/web-security/oauth
 
 ![](images/2%20-%20OAuth%20account%20hijacking%20via%20redirect_uri/2.png)
