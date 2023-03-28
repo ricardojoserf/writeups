@@ -6,10 +6,12 @@ To solve the lab, upload a basic PHP web shell, then use it to exfiltrate the co
 
 You can log in to your own account using the following credentials: wiener:peter
 
-Reference: https://portswigger.net/web-security/file-upload
 
 ----------------------------------------------
 
+Reference: https://portswigger.net/web-security/file-upload
+
+----------------------------------------------
 
 Generated endpoint: https://0a6000ce04de65cfc3e8c5ac00d700ed.web-security-academy.net
 
