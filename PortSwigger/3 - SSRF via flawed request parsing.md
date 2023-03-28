@@ -5,8 +5,6 @@ This lab is vulnerable to routing-based SSRF due to its flawed parsing of the re
 
 To solve the lab, access the internal admin panel located in the 192.168.0.0/24 range, then delete Carlos.
 
-
-
 ![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/1.png)
 
 Link: https://portswigger.net/web-security/host-header/exploiting#routing-based-ssrf
@@ -33,8 +31,6 @@ Send to Intruder:
 ![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/5.png)
 
 Using 192.168.0.113 we get a 404 error:
-
-![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/6.png)
 
 ![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/7.png)
 
@@ -74,7 +70,7 @@ We get the error:
 
 ![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/12.png)
 
-Let's repeat the process and add the csrf value in the response to the previous GET request ("IJTFhUceFHwKZHdbhX2eW0ayNuKksPhv"):
+Let's repeat the process and add the csrf value in the response to the previous GET request ("IJTFhUceFHwKZHdbhX2eW0ayNuKksPhv") - or repeat the GET request to /admin, what you prefer:
 
 ```
 POST /admin/delete HTTP/2
@@ -91,6 +87,6 @@ We get a 302 redirection:
 
 ![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/14.png)
 
-Lab is solved:
+It seems it worked!
 
 ![img](images/3%20-%20SSRF%20via%20flawed%20request%20parsing/15.png)
