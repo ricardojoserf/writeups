@@ -9,18 +9,19 @@ The admin user will open anything you send from the exploit server and they alwa
 
 You can log in with your own social media account using the following credentials: wiener:peter.
 
-https://portswigger.net/web-security/oauth
-
-
----
+------------------------------------------------
 
 ![](images/2%20-%20OAuth%20account%20hijacking%20via%20redirect_uri/1.png)
 
 <br>
 
+Reference: https://portswigger.net/web-security/oauth
+
 ![](images/2%20-%20OAuth%20account%20hijacking%20via%20redirect_uri/2.png)
 
-https://0a0c001204d355fec1a39983009b007d.web-security-academy.net/
+------------------------------------------------
+
+Generated endpoint: https://0a0c001204d355fec1a39983009b007d.web-security-academy.net/
 
 ![](images/2%20-%20OAuth%20account%20hijacking%20via%20redirect_uri/3.png)
 
