@@ -98,7 +98,7 @@ Here, clicking the “Click me next” button the user would be deleted:
 
 ![img](images/8%20-%20Multistep%20clickjacking/3.png)
 
-But if you send this, the user does not get deleted, probably because we used width:100% and height:100%, so the payload depends on the screen resolution. I will use a small ifram size with fixed size of 500x600 px:
+But if you send this, the user does not get deleted, probably because we used width:100% and height:100%, so the payload depends on the screen resolution. I will use a small iframe size with fixed size of 500x600 px:
 
 ```
 <head>
@@ -132,16 +132,16 @@ But if you send this, the user does not get deleted, probably because we used wi
 </body>
 ```
 
-Adjust the first button:
+First button looks good:
 
 
 
 ![img](images/8%20-%20Multistep%20clickjacking/4.png)
 
-And the second one:
+And the second one as well:
 
 
 
 ![img](images/8%20-%20Multistep%20clickjacking/5.png)
 
-This time we get the lab solved message!
+Change the opacity to 0.00001, send it and this time we get the lab solved message.
