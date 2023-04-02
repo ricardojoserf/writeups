@@ -16,6 +16,8 @@ References:
 
 - https://portswigger.net/web-security/file-path-traversal
 
+- https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Directory%20Traversal
+
 ---------------------------------------------
 
 Generated link: https://0a2a0030049b8f43822a9e64007d00ba.web-security-academy.net/
