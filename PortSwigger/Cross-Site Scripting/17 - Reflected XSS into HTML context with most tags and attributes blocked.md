@@ -25,14 +25,14 @@ The content of the search is reflected inside a h1 HTML element:
 
 
 
-If we try to add a tag "<h1>" it gets blocked:
+If we try to add a tag "h1" it gets blocked:
 
 
 
 ![img](images/Reflected%20XSS%20into%20HTML%20context%20with%20most%20tags%20and%20attributes%20blocked/2.png)
 
 
-But not if it is "<h2>":
+But not if it is "h2":
 
 
 
@@ -97,13 +97,6 @@ The only ones working:
 
 
 The information in the cheatsheet from these attributes is:
-
-
-
-
-
-
-
 
 
 ![img](images/Reflected%20XSS%20into%20HTML%20context%20with%20most%20tags%20and%20attributes%20blocked/10.png)
