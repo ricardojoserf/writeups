@@ -80,7 +80,7 @@ http://attacker-website.com/csrf-attack?0a2c007d0457217b8686cbaf0006004c.web-sec
 
 
 
-It is necessary to update “history.pushState” in the CSRF PoC and add the culnerable domain as a parameter of the url:
+It is necessary to update “history.pushState” in the CSRF PoC and add the vulnerable domain as a parameter of the url:
 
 ```
 <html>
@@ -103,12 +103,10 @@ It is necessary to update “history.pushState” in the CSRF PoC and add the cu
 ![img](images/CSRF%20with%20broken%20Referer%20validation/7.png)
 
 
-It is also necessary to send a “Referrer-Policy” value of “unsafe-url” in the Head section:
+And it is also necessary to send a “Referrer-Policy” value of “unsafe-url” in the Head section to send the whole URL in the Referer header:
 
 ```
 Referrer-Policy: unsafe-url
 ```
-
-
 
 ![img](images/CSRF%20with%20broken%20Referer%20validation/8.png)
