@@ -17,7 +17,7 @@ References:
 
 
 
-![img](images/HTTP/2%20request%20splitting%20via%20CRLF%20injection/1.png)
+![img](images/HTTP2%20request%20splitting%20via%20CRLF%20injection/1.png)
 
 ---------------------------------------------
 
@@ -25,14 +25,14 @@ Intercept the GET request and add “\r\n”, the “Host” header, “\r\n”,
 
 
 
-![img](images/HTTP/2%20request%20splitting%20via%20CRLF%20injection/2.png)
+![img](images/HTTP2%20request%20splitting%20via%20CRLF%20injection/2.png)
 
 
 Every two requests, we get a request to “/admin”, but no access to it:
 
 
 
-![img](images/HTTP/2%20request%20splitting%20via%20CRLF%20injection/3.png)
+![img](images/HTTP2%20request%20splitting%20via%20CRLF%20injection/3.png)
 
 
 Then I added the “Host” header to the second request too:
@@ -49,18 +49,18 @@ The response queue is poisoned after this. I executed a GET request to “/” e
 
 
 
-![img](images/HTTP/2%20request%20splitting%20via%20CRLF%20injection/4.png)
+![img](images/HTTP2%20request%20splitting%20via%20CRLF%20injection/4.png)
 
 
 With this cookie it is possible to access the “/admin” panel:
 
 
 
-![img](images/HTTP/2%20request%20splitting%20via%20CRLF%20injection/5.png)
+![img](images/HTTP2%20request%20splitting%20via%20CRLF%20injection/5.png)
 
 
 And then delete the user:
 
 
 
-![img](images/HTTP/2%20request%20splitting%20via%20CRLF%20injection/6.png)
+![img](images/HTTP2%20request%20splitting%20via%20CRLF%20injection/6.png)

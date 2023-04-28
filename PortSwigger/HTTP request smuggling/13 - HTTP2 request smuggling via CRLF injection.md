@@ -19,7 +19,7 @@ References:
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/1.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/1.png)
 
 ---------------------------------------------
 
@@ -28,14 +28,14 @@ There is a function to send comments:
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/2.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/2.png)
 
 
 It generates a POST request:
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/3.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/3.png)
 
 
 To test the H2.TE payload like this one:
@@ -61,14 +61,14 @@ We must add a new header and add \r\n and the “Transfer-Encoding: chunked” h
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/4.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/4.png)
 
 
 Every 2 requests, one is to /404:
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/5.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/5.png)
 
 
 We will change the request to “/404” for a payload to post a comment:
@@ -92,14 +92,14 @@ csrf=NO7t8vaJHMNuLmScMM45gMnp6NskWAQg&postId=9&name=test2&email=test3@test.com&w
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/6.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/6.png)
 
 
 We see the request is written as a comment in the post:
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/7.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/7.png)
 
 
 The final payload is:
@@ -125,12 +125,12 @@ You can read the whole cookies in the comments:
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/8.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/8.png)
 
 
 And use the cookie to accecss the page as “carlos”:
 
 
 
-![img](images/HTTP/2%20request%20smuggling%20via%20CRLF%20injection/9.png)
+![img](images/HTTP2%20request%20smuggling%20via%20CRLF%20injection/9.png)
 
