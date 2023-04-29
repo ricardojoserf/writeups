@@ -1,5 +1,5 @@
 
-# 22 - Blind OS command injection with output redirection
+# Blind OS command injection with output redirection
 
 This lab contains a blind OS command injection vulnerability in the feedback function.
 
