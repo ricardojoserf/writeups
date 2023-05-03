@@ -1,5 +1,5 @@
 
-# User ID controlled by request parameter, with unpredictable user IDs
+# User ID controlled by request parameter, with unpredictable user%20IDs
 
 This lab has a horizontal privilege escalation vulnerability on the user account page, but identifies users with GUIDs.
 
@@ -15,7 +15,7 @@ References:
 
 
 
-![img](images/User%20ID%20controlled%20by%20request%20parameter,%20with%20unpredictable%20user IDs/1.png)
+![img](images/User%20ID%20controlled%20by%20request%20parameter,%20with%20unpredictable%20user%20IDs/1.png)
 
 ---------------------------------------------
 
@@ -23,14 +23,14 @@ Clicking the “Home” button generates this GET request:
 
 
 
-![img](images/User%20ID%20controlled%20by%20request%20parameter,%20with%20unpredictable%20user IDs/2.png)
+![img](images/User%20ID%20controlled%20by%20request%20parameter,%20with%20unpredictable%20user%20IDs/2.png)
 
 
 We can get the administrator's GUID from the blog posts:
 
 
 
-![img](images/User%20ID%20controlled%20by%20request%20parameter,%20with%20unpredictable%20user IDs/3.png)
+![img](images/User%20ID%20controlled%20by%20request%20parameter,%20with%20unpredictable%20user%20IDs/3.png)
 
 
 And create a new request:
@@ -38,4 +38,4 @@ And create a new request:
 
 
 
-![img](images/User%20ID%20controlled%20by%20request%20parameter,%20with%20unpredictable%20user IDs/4.png)
+![img](images/User%20ID%20controlled%20by%20request%20parameter,%20with%20unpredictable%20user%20IDs/4.png)
