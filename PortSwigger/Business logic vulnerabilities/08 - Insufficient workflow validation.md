@@ -1,5 +1,5 @@
 
-# 17 - Insufficient workflow validation
+# Insufficient workflow validation
 
 This lab makes flawed assumptions about the sequence of events in the purchasing workflow. To solve the lab, exploit this flaw to buy a "Lightweight l33t leather jacket".
 
@@ -7,7 +7,9 @@ You can log in to your own account using the following credentials: wiener:peter
 
 ---------------------------------------------
 
-Reference: x
+Reference:
+
+- https://portswigger.net/web-security/logic-flaws/examples
 
 ---------------------------------------------
 
