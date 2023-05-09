@@ -88,7 +88,7 @@ W0Qhvki0tOhz7V7DD4c7gUE5MQ/KEsTNpdy4UQnWdyE%3d
 ![img](images/Authentication%20bypass%20via%20encryption%20oracle/10.png)
 
 
-First we will set the value “W0Qhvki0tOhz7V7DD4c7gUE5MQ/KEsTNpdy4UQnWdyE%3d” for the “notification” cookie to cheeck it is decrypted correctly:
+First we will set the value “W0Qhvki0tOhz7V7DD4c7gUE5MQ/KEsTNpdy4UQnWdyE%3d” for the “notification” cookie to check it is decrypted correctly:
 
 
 
