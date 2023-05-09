@@ -20,7 +20,7 @@ First I will try to buy some eggs:
 
 ![img](images/Insufficient%20workflow%20validation/1.png)
 
-Clicking Place order generates a POSTT request:
+Clicking "Place order" generates a POST request:
 
 
 
