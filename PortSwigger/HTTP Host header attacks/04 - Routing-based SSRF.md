@@ -15,7 +15,7 @@ References:
 
 
 
-![img](images/Web%20cache%20poisoning%20via%20ambiguous%20requests/1.png)
+![img](images/Routing-based%20SSRF/1.png)
 
 ---------------------------------------------
 
@@ -24,39 +24,39 @@ Intercept a request to “/” and change the “Host” header for a Burp colla
 
 
 
-![img](images/Web%20cache%20poisoning%20via%20ambiguous%20requests/2.png)
+![img](images/Routing-based%20SSRF/2.png)
 
 
 The domain is resolved:
 
 
 
-![img](images/Web%20cache%20poisoning%20via%20ambiguous%20requests/3.png)
+![img](images/Routing-based%20SSRF/3.png)
 
 
 Then send the request to Intruder:
 
 
 
-![img](images/Web%20cache%20poisoning%20via%20ambiguous%20requests/4.png)
+![img](images/Routing-based%20SSRF/4.png)
 
 
 We find an admin panel at 192.168.0.127:
 
 
 
-![img](images/Web%20cache%20poisoning%20via%20ambiguous%20requests/5.png)
+![img](images/Routing-based%20SSRF/5.png)
 
 
 It seems it is a POST request:
 
 
 
-![img](images/Web%20cache%20poisoning%20via%20ambiguous%20requests/6.png)
+![img](images/Routing-based%20SSRF/6.png)
 
 
 But I tried a GET request and it works as well:
 
 
 
-![img](images/Web%20cache%20poisoning%20via%20ambiguous%20requests/7.png)
+![img](images/Routing-based%20SSRF/7.png)
