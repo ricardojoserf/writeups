@@ -170,3 +170,34 @@ if __name__ == '__main__':
         total_marks += i 
     print("%.2f" % float(total_marks/number_marks))
 ```
+
+
+
+--------------------------
+
+### List comprehensions
+
+```
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    
+    list_1 = []
+    list_2 = []
+    list_3 = []
+    
+    for i in range(0,x+1):
+        list_1.append(i)
+    for i in range(0,y+1):
+        list_2.append(i)
+    for i in range(0,z+1):
+        list_3.append(i)
+    
+    res = [[i, j, k] for i in list_1
+        for j in list_2
+        for k in list_3
+        if (i+j+k != n)]
+    print(res)  
+```
