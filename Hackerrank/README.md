@@ -201,3 +201,51 @@ if __name__ == '__main__':
         if (i+j+k != n)]
     print(res)  
 ```
+
+----------------------------
+
+### Python lists
+
+```
+if __name__ == '__main__':
+    N = int(input())
+    # print(N)
+    list_ = []
+    for i in range(0, N):
+        option_ = input()
+        splitted = option_.split(" ")
+        action_ = splitted[0]
+        #print(option_ + " " + action_)
+        if action_ == "insert":
+            pos_ = int(splitted[1])
+            val_ = int(splitted[2])
+            # print("Inserting " + str(val_) + " in position " + str(pos_))
+            #print(list_)
+            if (len(list_) < pos_):
+                for i in range(len(list_), pos_):
+                    list_.insert(i, 33)
+            list_.insert(pos_, val_)
+            # print(list_)
+            #print(list_)
+        elif action_ == "print":
+            print(list_)
+        elif action_ == "remove":
+            val_ = int(splitted[1])
+            if val_ in list_:
+                list_.remove(val_)
+            #print(list_)
+        elif action_ == "append":
+            val_ = int(splitted[1])
+            list_.append(val_)
+            #print(list_)
+        elif action_ == "sort":
+            list_.sort()
+            #print(list_)
+        elif action_ == "pop":
+            list_.pop()
+            #print(list_)
+        elif action_ == "reverse":
+            list_.reverse()
+        else:
+            print("?")
+```
