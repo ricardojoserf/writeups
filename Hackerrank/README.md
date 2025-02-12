@@ -270,4 +270,20 @@ if __name__ == '__main__':
 
 --------------------------
 
-### 
+### sWAP cASE
+
+```
+def swap_case(s):
+    aux_str = ""
+    for char in s:   
+        if char.islower():
+            aux_str += char.upper()
+        else:
+            aux_str += char.lower()
+    return aux_str
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
+```
