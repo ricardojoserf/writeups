@@ -249,3 +249,25 @@ if __name__ == '__main__':
         else:
             print("?")
 ```
+
+--------------------------
+
+### Tuples
+
+```
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    aux_list = list(integer_list)
+    aux_tuple = ()
+    
+    for i in range(0, n):
+        aux_tuple += (aux_list[i],)
+        
+    print(str(hash(aux_tuple)))
+```
+
+
+--------------------------
+
+### 
