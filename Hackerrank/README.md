@@ -287,3 +287,104 @@ if __name__ == '__main__':
     result = swap_case(s)
     print(result)
 ```
+
+--------------------------
+
+### Split and join
+
+```
+def split_and_join(line):
+    # write your code here
+    return "-".join(line.split(" "))
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
+```
+
+
+--------------------------
+
+### What's your name?
+
+```
+#
+# Complete the 'print_full_name' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts following parameters:
+#  1. STRING first
+#  2. STRING last
+#
+
+def print_full_name(first, last):
+    # Write your code here
+    print(f"Hello {first} {last}! You just delved into python.")
+
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
+```
+
+
+--------------------------
+
+### Python mutations
+
+```
+def mutate_string(string, position, character):
+    str_list = list(string)
+    str_list[position] = character
+    return ''.join(str_list)
+
+if __name__ == '__main__':
+```
+
+--------------------------
+
+### Find a string
+
+```
+def count_substring(string, sub_string):
+    counter = 0
+    for i in range(0, len(string)):
+        if (string[i] == sub_string[0]):
+            if ( (string[i:(i+len(sub_string))]) == sub_string):
+                counter += 1
+    return counter
+
+if __name__ == '__main__':
+```
+
+--------------------------
+
+### String validators
+
+```
+if __name__ == '__main__':
+    s = input()
+    print(any(char.isalnum() for char in s))
+    print(any(char.isalpha() for char in s))
+    print(any(char.isdigit() for char in s))
+    print(any(char.islower() for char in s))
+    print(any(char.isupper() for char in s))
+```
+
+--------------------------
+
+### 
+
+```
+
+```
+
+--------------------------
+
+### 
+
+```
+
+```
+
