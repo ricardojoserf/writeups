@@ -374,10 +374,82 @@ if __name__ == '__main__':
 
 --------------------------
 
-### 
+### Text Alignment
 
 ```
+#Replace all ______ with rjust, ljust or center. 
 
+thickness = int(input()) #This must be an odd number
+c = 'H'
+
+#Top Cone
+for i in range(thickness):
+    print((c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1))
+
+#Top Pillars
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+               
+#Middle Belt
+for i in range((thickness+1)//2):
+    print((c*thickness*5).center(thickness*6))    
+
+#Bottom Pillars
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))    
+
+#Bottom Cone
+for i in range(thickness):
+    print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
+```
+
+--------------------------
+
+### Text Wrap
+
+```
+import textwrap
+
+def wrap(string, max_width):
+    result = ""
+    for i in range(0, len(string)):
+        if i % max_width == 0:
+            result += (string[i:i+max_width] + "\n")
+    return result
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
+```
+
+--------------------------
+
+### Designed Door Mat
+
+```
+input_ = input()
+N = int(input_.split(" ")[0])
+M = int(input_.split(" ")[1])
+
+# 0 -> 1 * 3 
+# 1 -> 3 * 3
+# 2 -> 5 * 3
+# 3 -> 7 * 3
+
+for i in range(int(N/2)):
+    s2 = (i*2 + 1)*3
+    s1 = (M - s2)/2
+    aux_str = "-"*int(s1) + ".|."*int(s2/3) + "-"*int(s1)
+    print(aux_str)
+    
+print('WELCOME'.center(int(M),"-"))
+
+for i in range(int(N/2)-1,-1,-1):
+    s2 = (i*2 + 1)*3
+    s1 = (M - s2)/2
+    aux_str = "-"*int(s1) + ".|."*int(s2/3) + "-"*int(s1)
+    print(aux_str)
 ```
 
 --------------------------
@@ -387,4 +459,3 @@ if __name__ == '__main__':
 ```
 
 ```
-
