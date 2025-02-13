@@ -507,18 +507,35 @@ if __name__ == '__main__':
     print_rangoli(n)
 ```
 
---------------------------
+---------------
 
-### 
-
-```
+### Capitalize!
 
 ```
+# Complete the solve function below.
+def solve(s):
+    s_list = s.split(" ")
+    new_list = []
+    for i in s_list:
+        capitalized = False
+        new_str = ""
+        for c in i:
+            if c.isalpha and capitalized is False:
+                new_str += c.upper()
+                capitalized = True
+            else:
+                new_str += c
+        new_list.append(new_str)
+    return " ".join(new_list)
 
---------------------------
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-### 
+    s = input()
 
-```
+    result = solve(s)
 
+    fptr.write(result + '\n')
+
+    fptr.close()
 ```
