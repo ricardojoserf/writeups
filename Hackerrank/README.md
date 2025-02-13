@@ -454,6 +454,69 @@ for i in range(int(N/2)-1,-1,-1):
 
 --------------------------
 
+### String Formatting
+
+```
+def print_formatted(number):    
+    padding_length = len(str(bin(number)).replace("0b",""))   
+    for n in range(1, number+1):
+        string_aux =  str(n).rjust(padding_length) + " "
+        string_aux += str(oct(n)).replace("0o","").rjust(padding_length) + " "
+        string_aux += str(hex(n)).replace("0x","").rjust(padding_length).upper() + " "
+        string_aux += str(bin(n)).replace("0b","").rjust(padding_length) + " "
+        print(string_aux)
+
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)
+```
+
+--------------
+
+
+### Alphabet Rangoli
+
+```
+def print_rangoli(size):
+    width_ = 4 * size - 3
+    list_1 = [i for i in range(size, 1, -1)]
+    list_2 = [i for i in range(1, size + 1)]
+    list_1.extend(list_2)
+    
+    for i in list_1:
+        number_of_chars = (size - i + 1)
+        s1 = (size - number_of_chars) * 2
+        string_aux = ("-"*s1)
+        
+        for j in range(number_of_chars - 1, 0, -1):
+            char_ = chr(97 - 1 + i + j)
+            string_aux += (char_ + "-")
+        
+        for j in range(number_of_chars):
+            char_ = chr(97 - 1 + i + j)
+            string_aux += char_
+            if j != (number_of_chars-1):
+                 string_aux +=  "-"
+                 
+        s2 = width_- len(string_aux)
+        string_aux += ("-"*s2)
+        print(string_aux)
+
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
+```
+
+--------------------------
+
+### 
+
+```
+
+```
+
+--------------------------
+
 ### 
 
 ```
