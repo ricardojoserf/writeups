@@ -539,3 +539,65 @@ if __name__ == '__main__':
 
     fptr.close()
 ```
+
+------------
+
+### itertools.product()
+
+```
+from itertools import product
+
+a_input = input()
+b_input = input()
+a_list = [int(i) for i in a_input.split()]
+b_list = [int(i) for i in b_input.split()]
+
+cartesian_product = list(product(a_list, b_list))
+
+cartesian_product_str = ""
+for i in cartesian_product:
+    cartesian_product_str += str(i) + " "    
+print(cartesian_product_str)
+```
+
+------------
+
+### itertools.permutations()
+
+```
+from itertools import permutations
+
+input_text = input()
+str_ = input_text.split()[0]
+k_ = int(input_text.split()[1])
+permutations =  list(permutations(str_, k_))
+permutations.sort()
+for p in permutations:
+    print("".join(p))
+```
+
+--------------------------
+
+### collections.Counter()
+
+```
+from collections import Counter
+
+nr_shoes = int(input())
+shoe_sizes = [int(i) for i in input().split()]
+shoe_sizes_coll = Counter(shoe_sizes)
+nr_customers = int(input())
+ganancia = 0
+
+for i in range(nr_customers):
+    size_price = input().split()
+    size_price = tuple(map(int, size_price))
+    counter = 0
+    for k in shoe_sizes_coll.keys():
+        if (k == size_price[0]):
+            if (list(shoe_sizes_coll.values())[counter]) >= 1:
+                ganancia += size_price[1]
+                shoe_sizes_coll[k] -= 1
+        counter += 1
+print(ganancia)
+```
