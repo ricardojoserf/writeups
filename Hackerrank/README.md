@@ -601,3 +601,114 @@ for i in range(nr_customers):
         counter += 1
 print(ganancia)
 ```
+
+----------------
+
+### Introduction to sets
+
+```
+def average(array):
+    set_array = set(array)
+    return (sum(set_array) / len(set_array))
+```
+
+
+----------------
+
+### Symmetric difference
+
+```
+len_1 = input()
+arr_1 = input().split(" ")
+len_2 = input()
+arr_2 = input().split(" ")
+
+set_1 = set(list(map(int, arr_1)))
+set_2 = set(list(map(int, arr_2)))
+
+diff_1 = set_1.difference(set_2)
+diff_2 = set_2.difference(set_1)
+difference_set = diff_1.union(diff_2)
+
+for i in sorted(difference_set):
+    print(i)
+```
+
+
+----------------
+
+### No idea!
+
+```
+n, m = map(int, input().split())
+arr_elements = list(map(int, input().split()))
+a_ = set(map(int, input().split()))
+b_ = set(map(int, input().split()))
+
+happiness = 0
+for i in arr_elements:
+    if i in a_:
+        happiness += 1
+    elif i in b_:
+        happiness -= 1
+print(int(happiness))
+
+```
+
+
+----------------
+
+### Set.add()
+
+```
+my_set = set()
+number_countries = int(input())
+
+for i in range(0,number_countries): # 0 to 6
+    new_country = input()
+    #print(i)
+    #print(new_country)
+    my_set.add(new_country)
+    #print(my_set)
+print(len(my_set))
+```
+
+
+----------------
+
+### Set .discard(), .remove() & .pop()
+
+```
+n = int(input())
+set_s = set((map(int,(input().split(" ")))))
+number_commands = int(input())
+for i in range(0, number_commands):
+    cmd_ = input()
+    if cmd_.startswith("pop"):
+        try:
+            #set_s.pop()
+            set_s.remove(min(set_s))
+        except:
+            pass
+    elif cmd_.startswith("remove"):
+        try:
+            val_ = int(cmd_.split()[1])
+            set_s.remove(val_)
+        except:
+            pass
+    elif cmd_.startswith("discard"):
+        val_ = int(cmd_.split()[1])
+        set_s.discard(val_)
+    else:
+        print("error")
+print(sum(set_s))
+```
+
+
+----------------
+
+### 
+
+```
+
+```
