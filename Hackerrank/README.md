@@ -704,6 +704,83 @@ for i in range(0, number_commands):
 print(sum(set_s))
 ```
 
+--------------------------
+
+### Polar coordinates
+
+```
+import cmath
+
+val_ = input()
+
+x_ = 0
+y_ = 0
+if "+" in val_:
+    x_ = float(val_.split("+")[0])
+    y_ = float(val_.split("+")[1].split("j")[0])
+elif "j" in val_:
+    x_ = float(0)
+    y_ = float(val_.split("j")[0])
+else:
+    x_ = float(val_)
+    y_ = 0
+
+print(abs(complex(x_, y_)))
+print(cmath.phase(complex(x_, y_)))
+
+```
+
+--------------------------
+
+### Set .union() Operation
+
+```
+n = input()
+english_st = set(list(map(int, input().split())))
+b = input()
+french_st = set(list(map(int, input().split())))
+all_st = english_st.union(french_st)
+print(len(all_st))
+```
+
+--------------------------
+
+### Set .intersection() Operation
+
+```
+n = input()
+english_st = set(list(map(int, input().split())))
+b = input()
+french_st = set(list(map(int, input().split())))
+all_st = english_st.intersection(french_st)
+print(len(all_st))
+```
+
+--------------------------
+
+### Set .difference() Operation
+
+```
+n = input()
+english_st = set(list(map(int, input().split())))
+b = input()
+french_st = set(list(map(int, input().split())))
+all_st = english_st.difference(french_st)
+print(len(all_st))
+```
+
+--------------------------
+
+### Set .symmetric_difference() Operation
+
+```
+n = input()
+english_st = set(list(map(int, input().split())))
+b = input()
+french_st = set(list(map(int, input().split())))
+all_st = english_st.symmetric_difference(french_st)
+print(len(all_st))
+```
 
 ----------------
 
