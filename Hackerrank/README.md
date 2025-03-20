@@ -784,6 +784,205 @@ print(len(all_st))
 
 ----------------
 
+### DefaultDict Tutorial
+
+```
+from collections import defaultdict
+
+m_n = input().split(" ")
+m_ = int(m_n[0])
+n_ = int(m_n[1])
+
+m_arr = defaultdict(list)
+for i in range(m_):
+    key_ = input()
+    m_arr[key_].append(str(i+1))
+
+for j in range(n_):
+    answer = ""
+    key_ = input()
+    for l in m_arr.items():
+        if l[0] == key_:
+            answer = " ".join(list(l[1]))
+    if answer == "":
+        print("-1")
+    else:
+        print(answer)
+```
+
+------------
+
+### Collections.namedtuple()
+
+```
+from collections import namedtuple
+n_ = int(input())
+column_names = input().split()
+MyClass = namedtuple("MyClass", column_names)
+marks_sum = 0
+for i in range(0,n_):
+    student_info = input().split()
+    student_obj = MyClass(student_info[0],student_info[1],student_info[2],student_info[3])
+    marks_sum += int(student_obj.MARKS)
+print(marks_sum/int(n_))
+```
+
+------------
+
+### collections.OrderedDict
+
+```
+from collections import OrderedDict
+
+n_ = int(input())
+ordered_dictionary = OrderedDict()
+for i in range(n_):
+    food_price = input().split()
+    price_ = food_price[len(food_price)-1]
+    food_price.pop()
+    food_ = " ".join(food_price)
+    if food_ not in ordered_dictionary:
+        ordered_dictionary[food_] = int(price_)
+    else:
+        ordered_dictionary[food_] += int(price_)
+
+for k in ordered_dictionary:
+    print(k + " " + str(ordered_dictionary[k]))
+```
+
+------------
+
+### Word Order
+
+```
+from collections import OrderedDict
+
+n_ = int(input())
+ordered_dictionary = OrderedDict()
+for i in range(n_):
+    key_ = input()
+    if key_ not in ordered_dictionary:
+        ordered_dictionary[key_] = 1
+    else:
+        ordered_dictionary[key_] += 1
+
+print(len(ordered_dictionary))
+k_ = [str(ordered_dictionary[k]) for k in ordered_dictionary]
+print(" ".join(k_))
+```
+
+------------
+
+### Collections.deque()
+
+```
+from collections import deque
+n_ = int(input())
+d = deque()
+
+for i in range(n_):
+    cmd_ = input()
+    if cmd_.startswith("append "):
+        d.append((cmd_.split()[1]))        
+    elif cmd_.startswith("appendleft "):
+        d.appendleft((cmd_.split()[1]))
+    elif cmd_.startswith("popleft"):
+        d.popleft()
+    elif cmd_.startswith("pop"):
+        d.pop()
+        
+print(" ".join(d))
+```
+
+------------
+
+### Hello, Wold! xD
+
+```
+if __name__ == '__main__':
+    print("Hello, World!")
+```
+
+------------
+
+### Calendar module
+
+```
+import calendar
+m_d_y = input().split()
+int_day = calendar.weekday(int(m_d_y[2]), int(m_d_y[0]), int(m_d_y[1]))
+list_weekdays = ["MONDAY", "TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY","SUNDAY"]
+print(list_weekdays[int_day])
+```
+
+------------
+
+### Exceptions
+
+```
+t_ = int(input())
+for i in range(t_):
+    v1_v2 = input().split(" ")
+    division_value = 0
+    try:
+        division_value = int(v1_v2[0]) / int(v1_v2[1])
+        print(int(division_value))
+    except ZeroDivisionError as e:
+        print("Error Code: integer division or modulo by zero") #+str(e))
+    except ValueError as e:
+        print("Error Code: "+str(e))
+```
+
+------------
+
+### itertools.combinations()
+
+```
+from itertools import combinations
+
+word_k_ = input().split()
+word_ = word_k_[0]
+k_ = int(word_k_[1])
+for i in range(k_):
+    aux_list = []   
+    combinations_ = (list(combinations(word_,(i+1))))
+    
+    for c in combinations_:
+        aux_list.append("".join(sorted(c)))
+    
+    for j in sorted(aux_list):
+        print(j)
+```
+
+------------
+
+### Zipped!
+
+```
+n_x_ = input()
+n_ = int(n_x_.split()[0])
+x_ = int(n_x_.split()[1])
+
+X = []
+for i in range(x_):
+    student_marks = [float(k) for k in input().split()]
+    X.append(student_marks)
+
+for j in zip(*X):
+    print(sum(j)/len(j))
+```
+
+------------
+
+
+### input()
+
+```
+print("Unsolvable! It needs Python2")
+```
+
+------------
+
 ### 
 
 ```
